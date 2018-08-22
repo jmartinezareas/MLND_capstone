@@ -1,46 +1,37 @@
 # MLND_capstone_project
-Udacity MLND capstone project
-Install
-This project requires Python 2.7 and the following Python libraries installed:
+### Install
 
-NumPy
-Pandas
-matplotlib
-scikit-learn
-You will also need to have software installed to run and execute an iPython Notebook
+This project requires **Python 3.6** and the following Python libraries installed:
 
-We recommend students install Anaconda, a pre-packaged Python distribution that contains all of the necessary libraries and software for this project.
+- [NumPy](http://www.numpy.org/)
+- [Pandas](http://pandas.pydata.org)
+- [matplotlib](http://matplotlib.org/)
+- [scikit-learn](http://scikit-learn.org/stable/)
 
-Code
-Template code is provided in the finding_donors.ipynb notebook file. You will also be required to use the included visuals.py Python file and the census.csv dataset file to complete your work. While some code has already been implemented to get you started, you will need to implement additional functionality when requested to successfully complete the project. Note that the code included in visuals.py is meant to be used out-of-the-box and not intended for students to manipulate. If you are interested in how the visualizations are created in the notebook, please feel free to explore this Python file.
+You will also need to have software installed to run and execute an [iPython Notebook](http://ipython.org/notebook.html)
 
-Run
-In a terminal or command window, navigate to the top-level project directory finding_donors/ (that contains this README) and run one of the following commands:
+We recommend installing [Anaconda](https://www.continuum.io/downloads), a pre-packaged Python distribution that contains all of the necessary libraries and software for this project. 
 
-ipython notebook finding_donors.ipynb
-or
+### Code
 
-jupyter notebook finding_donors.ipynb
+Template code is provided in the `Forecasts_Jewelry_1.66_initial.ipynb` notebook file and `Forecasts_Jewelry_1.66_5xData.ipynb` . You will also require `product_per_day.csv` and `product_per_day_moredata.csv` dataset files. 
+
+### Run
+
+In a terminal or command window, navigate to the top-level project directory (that contains this README) and run one of the following commands:
+
+```bash
+jupyter notebook Forecasts_Jewelry_1.66_initial.ipynb
+```
+
 This will open the iPython Notebook software and project file in your browser.
 
-Data
-The modified census dataset consists of approximately 32,000 data points, with each datapoint having 13 features. This dataset is a modified version of the dataset published in the paper "Scaling Up the Accuracy of Naive-Bayes Classifiers: a Decision-Tree Hybrid", by Ron Kohavi. You may find this paper online, with the original dataset hosted on UCI.
+### Data
 
-Features
+The dataset consists of 50 data points for `product_per_day.csv` and 250 for `product_per_day_moredata.csv` with each datapoint referring to the amount of product sold per day at a given day from April to May 2018.
 
-age: Age
-workclass: Working Class (Private, Self-emp-not-inc, Self-emp-inc, Federal-gov, Local-gov, State-gov, Without-pay, Never-worked)
-education_level: Level of Education (Bachelors, Some-college, 11th, HS-grad, Prof-school, Assoc-acdm, Assoc-voc, 9th, 7th-8th, 12th, Masters, 1st-4th, 10th, Doctorate, 5th-6th, Preschool)
-education-num: Number of educational years completed
-marital-status: Marital status (Married-civ-spouse, Divorced, Never-married, Separated, Widowed, Married-spouse-absent, Married-AF-spouse)
-occupation: Work Occupation (Tech-support, Craft-repair, Other-service, Sales, Exec-managerial, Prof-specialty, Handlers-cleaners, Machine-op-inspct, Adm-clerical, Farming-fishing, Transport-moving, Priv-house-serv, Protective-serv, Armed-Forces)
-relationship: Relationship Status (Wife, Own-child, Husband, Not-in-family, Other-relative, Unmarried)
-race: Race (White, Asian-Pac-Islander, Amer-Indian-Eskimo, Other, Black)
-sex: Sex (Female, Male)
-capital-gain: Monetary Capital Gains
-capital-loss: Monetary Capital Losses
-hours-per-week: Average Hours Per Week Worked
-native-country: Native Country (United-States, Cambodia, England, Puerto-Rico, Canada, Germany, Outlying-US(Guam-USVI-etc), India, Japan, Greece, South, China, Cuba, Iran, Honduras, Philippines, Italy, Poland, Jamaica, Vietnam, Mexico, Portugal, Ireland, France, Dominican-Republic, Laos, Ecuador, Taiwan, Haiti, Columbia, Hungary, Guatemala, Nicaragua, Scotland, Thailand, Yugoslavia, El-Salvador, Trinadad&Tobago, Peru, Hong, Holand-Netherlands)
-Target Variable
+**Features**
+There are no features in this dataset, they are constructed within the jupyter notebook itself.
 
-income: Income Class (<=50K, >50K)
+**Target Variable**
+- `product grams`: quantity of grams sold of a single product line.
