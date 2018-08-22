@@ -31,7 +31,7 @@ This will open the iPython Notebook software and project file in your browser.
 The dataset consists of 50 data points for `product_per_day.csv` and 250 for `product_per_day_moredata.csv` with each datapoint referring to the amount of product sold per day at a given day from April to May 2018.
 
 **Features**
-There are no features in this dataset, they are constructed within the jupyter notebook itself.
+- There are no features in this dataset, they are constructed within the jupyter notebook itself.
 
 **Target Variable**
 - `product grams`: quantity of grams sold of a single product line.
